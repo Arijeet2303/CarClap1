@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Login Page </title>
+  <style>
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: pink;
+}
+button {
+       background-color: #4CAF50;
+       width: 100%;
+        color: orange;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+         }
+ form {
+        border: 3px solid #f1f1f1;
+    }
+ input[type=text], input[type=password] {
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid green;
+        box-sizing: border-box;
+    }
+ button:hover {
+        opacity: 0.7;
+    }
+  .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        margin: 10px 5px;
+    }
+
+
+ .container {
+        padding: 25px;
+        background-color: lightblue;
+    }
+</style>
+</head>
+<body>
+<center> <h1> Student Login Form </h1> </center>
+<form action="/vendor/register" method="post" enctype="multipart/form-data">
+  <div class="container">
+    <label>vendor_name : </label>
+    <input type="text" placeholder="Enter vendor_name" name="vendor_name" required>
+    <label>vendor_city : </label>
+    <input type="text" placeholder="Enter vendor_city" name="vendor_city" required>
+    <label>vendor_state : </label>
+    <input type="text" placeholder="Enter vendor_state" name="vendor_state" required>
+    <label>vendor_country : </label>
+    <input type="text" placeholder="Enter vendor_country" name="vendor_country" required>
+    <label>vendor_address : </label>
+    <input type="text" placeholder="Enter vendor_address" name="vendor_address" required>
+    <label>vendor_pin : </label>
+    <input type="text" placeholder="Enter vendor_pin" name="vendor_pin" required>
+    <label>vendor_govt : </label>
+    <input type="file" placeholder="Enter vendor_govt" name="img" required><br>
+    <label>vendor_email : </label>
+    <input type="text" placeholder="Enter vendor_email" name="vendor_email" required>
+    <label>vendor_phone : </label>
+    <input type="text" placeholder="Enter vendor_phone" name="vendor_phone" required>
+    <label>vendor_pic : </label>
+    <input type="text" placeholder="Enter vendor_pic" name="vendor_pic" required>
+    <label>Password : </label>
+    <input type="password" placeholder="Enter Password" name="vendor_password" required>
+    <button type="submit">Login</button>
+    <input type="checkbox" checked="checked"> Remember me
+    <button type="button" class="cancelbtn"> Cancel</button>
+    Forgot <a href="#"> password? </a>
+  </div>
+</form>
+</body>
+</html>
